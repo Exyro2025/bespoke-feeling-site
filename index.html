@@ -53,15 +53,20 @@
       font-size: 1.1rem;
       max-width: 85%;
       animation: fadeQuotes 24s infinite;
-      opacity: 0;
     }
     @keyframes fadeQuotes {
-      0%, 100% { opacity: 0; }
-      8%, 24% { opacity: 1; }
-      33%, 41% { opacity: 1; }
-      50% { opacity: 0; }
-      58%, 74% { opacity: 1; }
-      90% { opacity: 0; }
+      0% { opacity: 0; content: "You weren't found... you were designed."; }
+      8% { opacity: 1; }
+      24% { opacity: 1; }
+      32% { opacity: 0; }
+      33% { content: "Some loves aren't manufactured — they're custom-crafted."; }
+      41% { opacity: 1; }
+      57% { opacity: 1; }
+      65% { opacity: 0; }
+      66% { content: "This isn’t background music. It’s a feeling, cut just for you."; }
+      74% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { opacity: 0; }
     }
     .artist-note {
       max-width: 700px;
@@ -69,6 +74,12 @@
       font-size: 1rem;
       line-height: 1.5;
       color: #f0e7d8;
+    }
+    footer {
+      margin-top: 4rem;
+      padding: 2rem;
+      font-size: 0.85rem;
+      color: #b29c77;
     }
     .email-signup {
       margin: 2rem 0;
@@ -88,12 +99,6 @@
       cursor: pointer;
       font-weight: bold;
     }
-    footer {
-      margin-top: 4rem;
-      padding: 2rem;
-      font-size: 0.85rem;
-      color: #b29c77;
-    }
   </style>
 </head>
 <body>
@@ -102,11 +107,11 @@
     <h2>Tailored emotion. Designed for one.</h2>
   </header>
 
-<img src="/logo.png" alt="Logo" />
+  <img src="/Bespoke Feeling (One of One).png" alt="Bespoke Feeling Cover" class="cover-art" />
 
   <div class="player-placeholder">
     <div class="quote-rotator">
-      “You weren’t found... you were designed.”
+      <p>Loading your bespoke experience...</p>
     </div>
   </div>
 
@@ -128,3 +133,4 @@
   </footer>
 </body>
 </html>
+
