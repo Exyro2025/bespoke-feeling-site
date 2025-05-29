@@ -45,15 +45,14 @@
       min-height: 160px;
     }
     .quote-rotator {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       font-style: italic;
       font-size: 1.1rem;
       max-width: 85%;
-      animation: fadeQuotes 24s infinite;
+      margin: 0 auto;
+      text-align: center;
+      transition: opacity 0.5s ease;
     }
+
     @keyframes fadeQuotes {
       0% { opacity: 0; content: "You weren't found... you were designed."; }
       8% { opacity: 1; }
@@ -107,13 +106,28 @@
     <h2>Tailored emotion. Designed for one.</h2>
   </header>
 
- 
-
-  <div class="player-placeholder">
-    <div class="quote-rotator">
-      <p>Loading your bespoke experience...</p>
-    </div>
+ <div class="player-placeholder">
+  <div class="quote-rotator" id="quoteBox">
+    “You weren’t found... you were designed.”
   </div>
+</div>
+
+<script>
+  const quotes = [
+    "You weren’t found... you were designed.",
+    "Some loves aren't manufactured — they're custom-crafted.",
+    "This isn’t background music. It’s a feeling, cut just for you."
+  ];
+
+  let i = 0;
+  const quoteBox = document.getElementById("quoteBox");
+
+  setInterval(() => {
+    i = (i + 1) % quotes.length;
+    quoteBox.textContent = `“${quotes[i]}”`;
+  }, 5000);
+</script>
+
 
   <div class="artist-note">
     <p>
