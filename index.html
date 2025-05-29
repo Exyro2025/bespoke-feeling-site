@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bespoke Feeling – Tarvona</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #1a0f0a;
+      color: #f4d26b;
+      text-align: center;
+    }
+    header {
+      padding: 4rem 1rem 2rem;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 300;
+      font-style: italic;
+      color: #e2c87b;
+    }
+    .cover-art {
+      width: 100%;
+      max-width: 400px;
+      margin: 2rem auto;
+      border-radius: 12px;
+    }
+    .player-placeholder {
+      margin: 3rem auto;
+      width: 90%;
+      max-width: 700px;
+      padding: 2rem;
+      background: #2b1b14;
+      border: 1px solid #5a3c2b;
+      border-radius: 10px;
+      position: relative;
+      min-height: 160px;
+    }
+    .quote-rotator {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-style: italic;
+      font-size: 1.1rem;
+      max-width: 85%;
+      animation: fadeQuotes 24s infinite;
+      opacity: 0;
+    }
+    @keyframes fadeQuotes {
+      0%, 100% { opacity: 0; }
+      8%, 24% { opacity: 1; }
+      33%, 41% { opacity: 1; }
+      50% { opacity: 0; }
+      58%, 74% { opacity: 1; }
+      90% { opacity: 0; }
+    }
+    .artist-note {
+      max-width: 700px;
+      margin: 2rem auto;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #f0e7d8;
+    }
+    .email-signup {
+      margin: 2rem 0;
+    }
+    input[type=email] {
+      padding: 0.5rem;
+      width: 250px;
+      border-radius: 6px;
+      border: 1px solid #5a3c2b;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      margin-left: 0.5rem;
+      background: #f4d26b;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      margin-top: 4rem;
+      padding: 2rem;
+      font-size: 0.85rem;
+      color: #b29c77;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bespoke Feeling (Adaptive Remix)</h1>
+    <h2>Tailored emotion. Designed for one.</h2>
+  </header>
+
+  <img src="Bespoke Feeling (One of One).png" alt="Bespoke Feeling Cover" class="cover-art" />
+
+  <div class="player-placeholder">
+    <div class="quote-rotator">
+      “You weren’t found... you were designed.”
+    </div>
+  </div>
+
+  <div class="artist-note">
+    <p>
+      From the soul of Tarvona comes a rare creation — not mass-produced, but hand-crafted.
+      This adaptive remix will evolve with you, shaped by emotion and intimacy. Designed for lovers of timeless feeling, and for those who know how rare it is to be truly seen.
+    </p>
+  </div>
+
+  <div class="email-signup">
+    <p>Want exclusive updates before the full experience drops?</p>
+    <input type="email" placeholder="Enter your email" />
+    <button>Join the List</button>
+  </div>
+
+  <footer>
+    Presented by Jerailian House • Powered by LifeScore • © 2025 Tarvona. All Rights Reserved.
+  </footer>
+</body>
+</html>
